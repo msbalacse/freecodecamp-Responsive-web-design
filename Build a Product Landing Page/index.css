@@ -1,0 +1,162 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #eeeeee;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+.logo {
+  width: 60vw;
+}
+.logo img {
+  width: 300px;
+}
+nav {
+  font-weight: 400;
+}
+#nav-bar {
+  background-color: #eeeeee;
+}
+#nav-bar ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#hero {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+
+#hero #form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #caaa19;
+  padding: 5px 1rem;
+  font-size: 15px;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+}
+
+#hero #form #email {
+  padding: 3px 1rem;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem;
+}
+
+.icon {
+  color: #caaa19;
+}
+
+#how-it-works {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+#how-it-works iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  min-width: calc(90% / 3);
+  border: 1px solid #000;
+  border-radius: 3px;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer {
+  background-color: #ddd;
+  padding: 2rem;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-weight: bolder;
+}
+footer span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.test {
+  position: relative;
+}
+
+@media only screen and (max-width: 1180px) {
+  #pricing {
+    gap: 1rem;
+  }
+  .product {
+    margin: 1rem;
+  }
+}
