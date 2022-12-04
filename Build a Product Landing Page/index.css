@@ -106,7 +106,7 @@ nav {
 
 #pricing {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -120,6 +120,7 @@ nav {
   align-items: center;
   text-align: center;
   min-width: calc(90% / 3);
+  height: 300px;
   border: 1px solid #000;
   border-radius: 3px;
   gap: 1rem;
@@ -153,9 +154,6 @@ footer span {
 }
 
 @media only screen and (max-width: 1180px) {
-  #pricing {
-    gap: 1rem;
-  }
   .product {
     margin: 1rem;
   }
